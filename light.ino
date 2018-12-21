@@ -1,5 +1,6 @@
 
-int greenPin = 8;
+int greenPin = 13;
+int redPin = 12;
 
 int veryshortPeriod = 100;
 int shortPeriod = 300;
@@ -22,8 +23,10 @@ void loop()
     delay(shortPeriod);
     digitalWrite(greenPin, LOW);
     delay(shortPeriod);
+    digitalWrite(redPin, HIGH);
     digitalWrite(greenPin, HIGH);
     delay(longPeriod);
+    digitalWrite(redPin, LOW);
     digitalWrite(greenPin, LOW);
     delay(shortPeriod);
     // Jingle Bells
@@ -35,8 +38,10 @@ void loop()
     delay(shortPeriod);
     digitalWrite(greenPin, LOW);
     delay(shortPeriod);
+    digitalWrite(redPin, HIGH);
     digitalWrite(greenPin, HIGH);
     delay(longPeriod);
+    digitalWrite(redPin, LOW);
     digitalWrite(greenPin, LOW);
     delay(shortPeriod);
     //Jingle all the Way
@@ -56,9 +61,42 @@ void loop()
     delay(veryshortPeriod);
     digitalWrite(greenPin, LOW);
     delay(veryshortPeriod);
+    digitalWrite(redPin, HIGH);
+    digitalWrite(greenPin, HIGH);
+    delay(longPeriod);
+    digitalWrite(redPin, LOW);
+    digitalWrite(greenPin, LOW);
+    delay(longPeriod);
+    //Oh What Fun
+    digitalWrite(greenPin, HIGH);
+    delay(shortPeriod);
+    digitalWrite(greenPin, LOW);
+    delay(shortPeriod);
+    digitalWrite(greenPin, HIGH);
+    delay(shortPeriod);
+    digitalWrite(greenPin, LOW);
+    delay(shortPeriod);
     digitalWrite(greenPin, HIGH);
     delay(longPeriod);
     digitalWrite(greenPin, LOW);
+    delay(veryshortPeriod);
+    //It is to Ride
+    digitalWrite(greenPin, HIGH);
+    delay(shortPeriod);
+    digitalWrite(greenPin, LOW);
+    delay(veryshortPeriod);
+    digitalWrite(greenPin, HIGH);
+    delay(shortPeriod);
+    digitalWrite(greenPin, LOW);
+    delay(veryshortPeriod);
+    digitalWrite(greenPin, HIGH);
     delay(longPeriod);
+    digitalWrite(greenPin, LOW);
+    delay(veryshortPeriod);
+    digitalWrite(greenPin, HIGH);
+    delay(longPeriod);
+    digitalWrite(greenPin, LOW);
+    delay(veryshortPeriod);
+
     delay(6000);
 }
